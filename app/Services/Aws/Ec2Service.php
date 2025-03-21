@@ -15,7 +15,7 @@ class Ec2Service
     {
         $this->client = new Ec2Client([
             'version' => 'latest',
-            'region' => env('AWS_REGION'),
+            'region' => env('AWS_DEFAULT_REGION'),
             'credentials' => [
                 'key' => env('AWS_ACCESS_KEY_ID'),
                 'secret' => env('AWS_SECRET_ACCESS_KEY'),
